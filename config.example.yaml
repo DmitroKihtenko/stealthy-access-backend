@@ -1,0 +1,15 @@
+server:
+  socket: "0.0.0.0:8000"
+  basePath: "/backend"
+  openapiBasePath: "/swagger"
+  paginationDefaultLimit: 20
+
+kratos:
+  adminApiUrl: "http://127.0.0.1:4434"
+
+logs:
+  level: "info"
+  appName: "sharing-backend"
+
+authorization:
+  accessToken: "sksjdhdhdeye6736272jHDHD81JSu2"

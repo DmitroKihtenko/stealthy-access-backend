@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "User",
+  "description": "User identity",
+  "type": "object",
+  "properties": {
+    "traits": {
+      "type": "object",
+      "properties": {
+        "username": {
+          "type": "string",
+          "title": "User's unique nickname",
+          "minLength": 4,
+          "ory.sh/kratos": {
+            "credentials": {
+              "password": {
+                "identifier": true
+              }
+            }
+          }
+        },
+        "email": {
+          "description": "User's email address",
+          "type": "string"
+        },
+        "firstname": {
+          "title": "First Name",
+          "type": "string"
+        },
+        "lastname": {
+          "title": "Last Name",
+          "type": "string"
+        }
+      },
+      "required": [
+        "username", "firstname", "email", "lastname"
+      ],
+      "additionalProperties": false
+    }
+  }
+}
